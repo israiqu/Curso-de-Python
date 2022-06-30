@@ -1,5 +1,5 @@
-counter = 0
+counter = 100
 
-while counter <=100:
+while counter > 0:
     print(counter)
-    counter += 1
+    counter -= 1
