@@ -3,13 +3,13 @@ import time
 
 def Horario():
     irAcasa = False
-    horaActual = time.time()
-    horaObjetivo = time.time()
-    if horaActual == 19:
+    horaActual = time.strftime("%H")
+    horaObjetivo = 19
+    if int(horaActual) >= horaObjetivo:
         irAcasa = True
     else:
-        res = horaActual - horaObjetivo
-        print("faltan", res, "para ir a casa")
+        res = horaObjetivo - int(horaActual)
+        print("faltan", res, "horas para ir a casa")
 
     if irAcasa:
         print("Ya son las", horaActual, "vete a casa")
