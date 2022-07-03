@@ -1,10 +1,12 @@
+from cgitb import text
 import tkinter
 from tkinter import ttk
 
 ventana = tkinter.Tk()
 
 def botonReset(event):
-    opcion = None
+    opcion.set(None)
+    ventana.config(text='')
 
 
 ventana.columnconfigure(0, weight=1)
